@@ -1,0 +1,278 @@
+@font-face {
+    font-family: 'icomoonregular';
+    src: url('../../src/polices/icomoon-webfont.woff2') format('woff2'),
+         url('../../src/polices/icomoon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icomoonregular{
+    font-family: 'icomoonregular';
+    }
+
+$color1:#939597;
+$color2:#F0EEE9;
+$color3:#F5DF4D;
+$color4:#CF5C78;
+$color5:#00A0B0;
+
+*{ 
+    box-sizing: content-box;  
+}
+
+body{     
+    background-image:url('../../src/img/MarbreEffet_2.jpg');
+    background-size: 100% 100%;
+    color: $color2;    
+    margin: auto;     
+    font-size:16px;  
+    font-family:Lato;
+} 
+
+
+
+ul{
+    list-style: none;
+}
+
+.title{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    font-size:2.5vw; 
+    width:90%;  
+}
+
+.container_board{    
+    border: solid black 1px; 
+    margin:auto; 
+    width:80vw;
+    height: 80vw;   
+} 
+
+.row_board{    
+    width: 100%;
+    height: 12.5%;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
+    
+.square{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      
+    width:100%;
+    height:100%;         
+    font-size: 6vw;
+    color:black;
+    font-weight: bold;          
+    &:hover{        
+        background-color:$color3;} 
+}
+
+.dark{
+    background-color:$color1 ;
+    color:$color2;
+    
+     }
+
+.light{
+    background-color:$color2;
+    color:$color1;
+    }
+
+.king_line, .rook_line, .queen_line, .bishop_line, .knight_line, .pawn_line{
+    display:none; 
+    margin:auto;      
+    text-align:center;     
+    text-shadow: 
+        0 1px 0 #eee,
+        0 2px 0 #e5e5e5,
+        -1px 3px 0 #C8C8C8,
+        -1px 4px 0 #C1C1C1,
+        -2px 5px 0 #B9B9B9,
+        -2px 6px 0 #B2B2B2,
+        -2px 7px 2px rgba(0,0,0, 0.6),
+        -2px 7px 8px rgba(0,0,0, 0.2),
+        -2px 7px 45px rgba(0,0,0, 0.4);
+} 
+
+#kingButton {
+    animation: clignoter 0.8s 4;
+        }
+    @keyframes clignoter{
+       0%  {background-color: $color3;
+            }
+        
+        25% {background-color: $color5;
+            }
+
+        50%  {background-color: $color3;
+        }
+           
+        75% {background-color: $color5;
+            }
+       
+        100%{background-color: $color3;
+            }
+    } 
+
+/*Css des id Roi, Dame, Fou, Cavalier, Fou et pion*/
+@mixin idPièces{
+    display: block;    
+    color:black;
+    margin: auto;    
+    font-family: 'icomoonregular';
+    font-weight: 100;    
+}  
+    
+#king {
+    @include idPièces;   
+}        
+    
+#rook {
+    @include idPièces;   
+}
+
+#queen {
+    @include idPièces;     
+}
+
+#bishop {
+    @include idPièces;    
+}
+
+#pawn {
+   @include idPièces;   
+}
+
+#knight {
+    @include idPièces;     
+} 
+
+/*gestion de la partie accueil*/
+.texte_accueil{
+    font-size:22px;
+}
+
+/* aspect bouton des indicateurs du carrousel*/
+.carousel-indicators li {
+    position: relative;
+    bottom: -20px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #CF5C78 ;
+}
+
+/* container des images dans le carrousel*/
+.container_img{
+    display: flex;
+    align-items:center;
+    height:100%;    
+}
+
+/* corps des cartes dans le carrousel*/
+.card-body{
+    border: solid black;}
+
+/*couleur des textes*/
+.color3{
+    color:$color3;}
+.color4{
+    color:$color4;}
+.color5{
+    color:$color5;}
+
+/*couleur arrière-plan du texte dans le carrousel*/
+.bg-black{
+    background-color: black;}
+  
+/*gestion de la partie cursus*/
+.title_atouts, .title_digitales{
+    color:$color5;
+    font-size:22px;
+}  
+.souligne{
+    text-decoration: underline;
+}
+
+#html_icone{
+    color: #e34c26;
+    background-color:#ebebeb;}
+
+#css_icone{
+    color:#264de4;
+    background-color:#ebebeb;}
+
+#js_icone{
+    color:#F0DB4F;
+    background-color:#323330;}
+
+#react_icone{
+    color:#61DBFB};
+
+#git_icone{
+    color:#F1502F;
+    background-color:#ebebeb;
+} 
+
+#bootstrap_icone{
+    color:#563d7c;
+    background-color:#ebebeb;
+} 
+#jquery_icone{
+    color:#0868AC;
+    background-color:#ebebeb;
+} 
+#d3_icone{
+    color:#ee9448;
+    background-color:#ebebeb;
+}
+
+/*gestion de la partie parties*/
+.img_parties{
+    &:hover{
+        background-color: $color5;
+    }
+}
+
+/*gestion de la partie contact*/
+@mixin elementContact($color){   
+    font-family: 'icomoonregular';
+    color:$color;    
+    font-size: 5vw; 
+    text-align: center; 
+    display: none; 
+    font-weight: 100; 
+    &:hover{
+    animation: bounce 0.35s ease infinite alternate;}     
+}
+
+@keyframes bounce{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-30px);}
+}
+
+#mailButton{
+    @include elementContact($color4);    
+}
+
+#linkedin{
+    @include elementContact(blue); 
+}
+
+#github{
+    @include elementContact(black);
+}
+
+#smiley{
+    font-family: 'icomoonregular';
+    color:$color5;    
+    font-size: 5vw; 
+    text-align: center; 
+    display:none; 
+    font-weight: 100;     
+}
+#secretSquare:hover{
+    #smiley{
+        display:block;}
+            }
