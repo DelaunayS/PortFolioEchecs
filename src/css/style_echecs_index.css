@@ -72,15 +72,8 @@ ul {
 }
 
 .titlePicto {
-  font-size: calc(4*(0.4vh+0.6vw));
+  margin: 2px;
   text-align: center;
-}
-
-.king_line, .rook_line, .queen_line, .bishop_line, .knight_line, .pawn_line {
-  display: none;
-  margin: auto;
-  text-align: center;
-  text-shadow: 0 1px 0 #eee, 0 2px 0 #e5e5e5, -1px 3px 0 #C8C8C8, -1px 4px 0 #C1C1C1, -2px 5px 0 #B9B9B9, -2px 6px 0 #B2B2B2, -2px 7px 2px rgba(0, 0, 0, 0.6), -2px 7px 8px rgba(0, 0, 0, 0.2), -2px 7px 45px rgba(0, 0, 0, 0.4);
 }
 
 #kingButton {
@@ -106,58 +99,51 @@ ul {
 }
 
 /*Css des id Roi, Dame, Fou, Cavalier, Fou et pion*/
+.tailleFont {
+  font-family: 'icomoonregular';
+  font-weight: 100;
+}
+
 #king {
   display: block;
   color: black;
-  margin: auto;
-  font-size: calc(5*(0.6vh+0.4vw));
-  font-family: 'icomoonregular';
-  font-weight: 100;
+  text-align: center;
+  margin: 1px;
 }
 
 #rook {
   display: block;
   color: black;
-  margin: auto;
-  font-size: calc(5*(0.6vh+0.4vw));
-  font-family: 'icomoonregular';
-  font-weight: 100;
+  text-align: center;
+  margin: 1px;
 }
 
 #queen {
   display: block;
   color: black;
-  margin: auto;
-  font-size: calc(5*(0.6vh+0.4vw));
-  font-family: 'icomoonregular';
-  font-weight: 100;
+  text-align: center;
+  margin: 1px;
 }
 
 #bishop {
   display: block;
   color: black;
-  margin: auto;
-  font-size: calc(5*(0.6vh+0.4vw));
-  font-family: 'icomoonregular';
-  font-weight: 100;
+  text-align: center;
+  margin: 1px;
 }
 
 #pawn {
   display: block;
   color: black;
-  margin: auto;
-  font-size: calc(5*(0.6vh+0.4vw));
-  font-family: 'icomoonregular';
-  font-weight: 100;
+  text-align: center;
+  margin: 1px;
 }
 
 #knight {
   display: block;
   color: black;
-  margin: auto;
-  font-size: calc(5*(0.6vh+0.4vw));
-  font-family: 'icomoonregular';
-  font-weight: 100;
+  text-align: center;
+  margin: 1px;
 }
 
 /*gestion de la partie accueil*/
@@ -306,4 +292,67 @@ ul {
 
 #github:hover {
   animation: bounce 0.35s ease infinite alternate;
+}
+
+@media (max-width: 575.98px) {
+  .title {
+    font-size: calc(6*(0.5vh+0.5vw));
+  }
+  .titlePicto {
+    font-size: calc(3*(0.5vh+0.5vw));
+  }
+  .tailleFont {
+    font-size: calc(4*(0.5vh+0.5vw));
+  }
+  .container_board {
+    width: 88vw;
+    height: 88vw;
+  }
+  .row_board {
+    width: 88vw;
+    height: 11vw;
+  }
+  .square {
+    min-width: 11vw;
+    min-height: 11vw;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .title {
+    font-size: calc(4*(0.5vh+0.5vw));
+  }
+  .titlePicto {
+    font-size: calc(5*(0.5vh+0.5vw));
+  }
+  .tailleFont {
+    font-size: calc(6*(0.5vh+0.5vw));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .titlePicto {
+    font-size: calc(5*(0.5vh+0.5vw));
+  }
+  .tailleFont {
+    font-size: calc(6*(0.5vh+0.5vw));
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .titlePicto {
+    font-size: calc(5*(0.5vh+0.5vw));
+  }
+  .tailleFont {
+    font-size: calc(7*(0.5vh+0.5vw));
+  }
+}
+
+@media (min-width: 1200px) {
+  .titlePicto {
+    font-size: calc(5*(0.5vh+0.5vw));
+  }
+  .tailleFont {
+    font-size: calc(8*(0.5vh+0.5vw));
+  }
 }
