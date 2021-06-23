@@ -21,15 +21,14 @@ $color5:#00A0B0;
 }
 
 body{     
-    background-image:url('../../src/img/MarbreEffet_2.jpg');
-    background-size: 100% 100%;
-    color: $color2;    
+    /*background-image:url('../../src/img/MarbreEffet_2.jpg');
+    background-size: 100% 100%;*/
+    color: $color2; 
+    background-color: black;   
     margin: auto;     
     font-size:16px;  
     font-family:Lato;
 } 
-
-
 
 ul{
     list-style: none;
@@ -38,20 +37,20 @@ ul{
 .title{ 
     display: grid;
     grid-template-columns: 1fr 1fr;   
-    font-size:2.5vw; 
+    font-size:calc(7*(0.5vh+0.5vw));
     width:90%;  
 }
 
 .container_board{    
     border: solid black 1px; 
     margin:auto; 
-    width:80vw;
-    height: 80vw;   
+    width:80vh;
+    height: 80vh;   
 } 
 
 .row_board{    
-    width: 100%;
-    height: 12.5%;   
+    width: 80vh;
+    height: 10vh;   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
     
@@ -59,10 +58,8 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;      
-    width:100%;
-    height:100%;         
-    font-size: 6vw;
-    color:black;
+    min-width:10vh;
+    min-height:10vh;     
     font-weight: bold;          
     &:hover{        
         background-color:$color3;} 
@@ -70,8 +67,7 @@ ul{
 
 .dark{
     background-color:$color1 ;
-    color:$color2;
-    
+    color:$color2;    
      }
 
 .light{
@@ -79,6 +75,10 @@ ul{
     color:$color1;
     }
 
+.titlePicto{
+    font-size:calc(4*(0.4vh+0.6vw));  
+    text-align: center;
+}   
 .king_line, .rook_line, .queen_line, .bishop_line, .knight_line, .pawn_line{
     display:none; 
     margin:auto;      
@@ -119,7 +119,8 @@ ul{
 @mixin idPièces{
     display: block;    
     color:black;
-    margin: auto;    
+    margin: auto;
+    font-size:calc(5*(0.6vh+0.4vw));  
     font-family: 'icomoonregular';
     font-weight: 100;    
 }  
@@ -167,7 +168,7 @@ ul{
 .container_img{
     display: flex;
     align-items:center;
-    height:100%;    
+    height:80vw;    
 }
 
 /* corps des cartes dans le carrousel*/
@@ -239,7 +240,7 @@ ul{
 @mixin elementContact($color){   
     font-family: 'icomoonregular';
     color:$color;    
-    font-size: 5vw; 
+    font-size: 5vh; 
     text-align: center; 
     display: none; 
     font-weight: 100; 
