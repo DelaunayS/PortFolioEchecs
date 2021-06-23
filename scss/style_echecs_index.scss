@@ -27,25 +27,24 @@ body{
     background-color: black;   
     margin: auto;     
     font-size:16px;  
-    font-family:Lato;
+    font-family:Lato;  
+    overflow-y:scroll;  
 } 
 
 ul{
     list-style: none;
 }
 
-.title{ 
-    display: grid;
-    grid-template-columns: 1fr 1fr;   
-    font-size:calc(7*(0.5vh+0.5vw));
-    width:90%;  
+.title{     
+    text-align: center;  
+    font-size:calc(10*(0.5vh+0.5vw));  
 }
 
 .container_board{    
     border: solid black 1px; 
     margin:auto; 
     width:80vh;
-    height: 80vh;   
+    height: 80vh;     
 } 
 
 .row_board{    
@@ -59,7 +58,7 @@ ul{
     flex-direction: column;
     justify-content: center;      
     min-width:10vh;
-    min-height:10vh;     
+    min-height:10vh;        
     font-weight: bold;          
     &:hover{        
         background-color:$color3;} 
@@ -264,16 +263,3 @@ ul{
 #github{
     @include elementContact(black);
 }
-
-#smiley{
-    font-family: 'icomoonregular';
-    color:$color5;    
-    font-size: 5vw; 
-    text-align: center; 
-    display:none; 
-    font-weight: 100;     
-}
-#secretSquare:hover{
-    #smiley{
-        display:block;}
-            }

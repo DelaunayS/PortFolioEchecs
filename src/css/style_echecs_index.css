@@ -22,6 +22,7 @@ body {
   margin: auto;
   font-size: 16px;
   font-family: Lato;
+  overflow-y: scroll;
 }
 
 ul {
@@ -29,10 +30,8 @@ ul {
 }
 
 .title {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: calc(7*(0.5vh+0.5vw));
-  width: 90%;
+  text-align: center;
+  font-size: calc(10*(0.5vh+0.5vw));
 }
 
 .container_board {
@@ -307,17 +306,4 @@ ul {
 
 #github:hover {
   animation: bounce 0.35s ease infinite alternate;
-}
-
-#smiley {
-  font-family: 'icomoonregular';
-  color: #00A0B0;
-  font-size: 5vw;
-  text-align: center;
-  display: none;
-  font-weight: 100;
-}
-
-#secretSquare:hover #smiley {
-  display: block;
 }
