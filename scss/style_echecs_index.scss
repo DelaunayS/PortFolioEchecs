@@ -4,10 +4,12 @@
          url('../../src/polices/icomoon-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 .icomoonregular{
     font-family: 'icomoonregular';
+    font-size: 24px;
     }
 
 $color1:#939597;
@@ -20,9 +22,7 @@ $color5:#00A0B0;
     box-sizing: content-box;  
 }
 
-body{     
-    /*background-image:url('../../src/img/MarbreEffet_2.jpg');
-    background-size: 100% 100%;*/
+body{   
     color: $color2; 
     background-color: black;   
     margin: auto;     
@@ -36,8 +36,7 @@ ul{
 }
 
 .title{     
-    text-align: center;  
-    font-size:calc(10*(0.5vh+0.5vw));  
+    text-align: center;      
 }
 
 .container_board{    
@@ -92,19 +91,19 @@ ul{
 }
 
 #kingButton {
-    animation: clignoter 0.8s 4;
+    animation: clignoter 1s 3;
         }
     @keyframes clignoter{
        0%  {background-color: $color3;
             }
         
-        25% {background-color: $color5;
+        25% {background-color: $color4;
             }
 
         50%  {background-color: $color3;
         }
            
-        75% {background-color: $color5;
+        75% {background-color: $color4;
             }
        
         100%{background-color: $color3;
