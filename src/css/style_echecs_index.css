@@ -76,6 +76,18 @@ ul {
   text-align: center;
 }
 
+.cursorPointer {
+  cursor: pointer;
+}
+
+.cursorContext {
+  cursor: context-menu;
+}
+
+.text-left {
+  text-align: left;
+}
+
 #kingButton {
   animation: clignoter 0.8s 4;
 }
@@ -161,13 +173,6 @@ ul {
   background-color: #CF5C78;
 }
 
-/* container des images dans le carrousel*/
-.container_img {
-  display: flex;
-  align-items: center;
-  height: 80vw;
-}
-
 /* corps des cartes dans le carrousel*/
 .card-body {
   border: solid black;
@@ -238,11 +243,6 @@ ul {
 #d3_icone {
   color: #ee9448;
   background-color: #ebebeb;
-}
-
-/*gestion de la partie parties*/
-.img_parties:hover {
-  background-color: #00A0B0;
 }
 
 /*gestion de la partie contact*/

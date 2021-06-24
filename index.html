@@ -13,10 +13,9 @@
   
     <h1 class="title container" >&ltportfolio <span class=color5>id=</span><span class="color3">"chess"</span>&gt&lt/portfolio&gt</h1>
     
-
     <div class="container_board" id="accordion">
         <div class="row_board" >
-            <div  class="square light"id="kingButton" data-toggle="collapse" data-target="#collapseKing" aria-expanded="true" aria-controls="collapseKing">            
+            <div  class="square light cursorContext"id="kingButton" data-toggle="collapse" data-target="#collapseKing" aria-expanded="true" aria-controls="collapseKing">            
                 <div id="king" class="tailleFont" >
                     k
                 </div>
@@ -43,7 +42,7 @@
         </div>  
         
         <div class="row_board" >
-            <div  class="square dark"id="rookButton" data-toggle="collapse" data-target="#collapseRook" aria-expanded="true" aria-controls="collapseRook">            
+            <div  class="square dark cursorContext" id="rookButton" data-toggle="collapse" data-target="#collapseRook" aria-expanded="true" aria-controls="collapseRook">            
                 <div id="rook" class="tailleFont">
                     r
                 </div>  
@@ -69,16 +68,16 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">                    
-                        <img class="w-75 m-1" src="src/img/ApercuVisualisationDonnees.webp" alt="First slide"
+                        <img class="cursorPointer w-75 m-1" src="src/img/ApercuVisualisationDonnees.webp" alt="First slide"
                         onclick="window.location.href='https://delaunays.github.io/DonneesD3/'"
                         >                    
                       </div>
-                  <div class="carousel-item">                    
+                  <div class="cursorPointer carousel-item">                    
                     <img class="w-75 m-1" src="src/img/ApercuTP.webp" alt="Second slide"
                     onclick="window.location.href='https://delaunays.github.io/TP_portfolio/'"
                     >                    
                   </div>
-                  <div class="carousel-item">                    
+                  <div class="cursorPointer carousel-item">                    
                     <img class="w-75 m-1" src="src/img/ApercuJeuxMaternelle.webp" alt="Three slide"
                     onclick="window.location.href='https://delaunays.github.io/WebMaternelle/'">
                   </div>                  
@@ -95,7 +94,7 @@
         </div>  
 
         <div class="row_board">
-            <div  class="square light"id="queenButton" data-toggle="collapse" data-target="#collapseQueen" aria-expanded="true" aria-controls="collapseQueen">            
+            <div  class="square light cursorContext"id="queenButton" data-toggle="collapse" data-target="#collapseQueen" aria-expanded="true" aria-controls="collapseQueen">            
                 <div id="queen" class="tailleFont" >
                     q
                 </div>
@@ -139,11 +138,7 @@
                         <div class="bg-black">
                             <p>
                                 <span class="color5"> Autonome : </span> Toutes mes recherches et formations, c'est en autodidacte que je les ai réalisés.
-                            </p>
-                            <p> Même si la théorie est constructive, la pratique est autant voire plus importante : je vous invite donc à voir la partie 
-                                <span class="icomoonregular color3">r</span>
-                                <span class="color3"> PROJET </span>   
-                            </p>
+                            </p>                            
                         </div>
                         <ul>
                             <li class="text-left">
@@ -202,7 +197,7 @@
         </div> 
 
         <div class="row_board">
-            <div  class="square dark"id="rookButton" data-toggle="collapse" data-target="#collapseBishop" aria-expanded="true" aria-controls="collapseBishop">            
+            <div  class="square dark cursorContext"id="rookButton" data-toggle="collapse" data-target="#collapseBishop" aria-expanded="true" aria-controls="collapseBishop">            
                 <div id="bishop" class="tailleFont" >
                     b
                 </div>
@@ -259,7 +254,7 @@
         </div> 
                       
         <div class="row_board">
-            <div  class="square light"id="pawnButton" data-toggle="collapse" data-target="#collapsePawn" aria-expanded="true" aria-controls="collapsePawn">            
+            <div  class="square light cursorContext" id="pawnButton" data-toggle="collapse" data-target="#collapsePawn" aria-expanded="true" aria-controls="collapsePawn">            
                 <div id="pawn" class="tailleFont" >
                     p
                 </div>
@@ -284,14 +279,14 @@
                     <p><span class="color5">Commentées ?</span> Les commentaires doivent être suffisamment clairs pour n'importe quel lecteur : comme les commentaires d'un codage informatique !!</p>
                 </div>
                 <div class="bg-black img_parties">                    
-                    <img id="img_selectionParties" class="w-75 m-1" src="src/img/ApercuSelectionPartie.webp" alt="SelectionPartiesEchecs"
+                    <img class=" cursorPointer w-75 m-1" src="src/img/ApercuSelectionPartie.webp" alt="SelectionPartiesEchecs"
                     onclick="window.location.href='https://delaunays.github.io/SelectionParties/'">
                 </div>             
             </div>
         </div> 
         
         <div class="row_board">
-            <div  class="square dark">            
+            <div  class="square dark cursorContext">            
                 <div id="knight" class="tailleFont">
                     n
                 </div>
@@ -312,15 +307,15 @@
             <div class="square light"></div>
             <div class="square dark"></div>
             <div class="square light">
-                <div id="mailButton">I</div>    
+                <div id="mailButton" class="cursorPointer">I</div>    
             </div>
             <div class="square dark"></div>
             <div class="square light">
-                <div id="linkedin">K</div>  
+                <div id="linkedin" class="cursorPointer">K</div>  
             </div>
             <div class="square dark"></div>
             <div class="square light">
-                <div id="github">J</div>
+                <div id="github" class="cursorPointer">J</div>
             </div>
             <div class="square dark">
             </div>
