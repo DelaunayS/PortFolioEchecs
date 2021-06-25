@@ -253,13 +253,13 @@ ul{
 
 @media (max-width: 575.98px) {
     .title{
-        font-size: calc(6*(0.5vh+0.5vw));        
+        font-size: calc(3* (0.5vh + 0.5vw));        
     }
     .titlePicto{        
-        font-size: calc(3*(0.5vh+0.5vw));          
-    } 
+        font-size: calc(1* (0.5vh + 0.5vw));          
+    }  
     .tailleFont{          
-        font-size: calc(4*(0.5vh+0.5vw)); 
+        font-size: calc(2* (0.5vh + 0.5vw)); 
     }  
     .container_board{           
         width: 88vw;
@@ -277,51 +277,51 @@ ul{
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .title{
-        font-size: calc(8*(0.5vh+0.5vw));
-    } 
+        font-size: calc(3* (0.5vh + 0.5vw));        
+    }
     .titlePicto{        
-        font-size: calc(5*(0.5vh+0.5vw));          
+        font-size: calc(1.5* (0.5vh + 0.5vw));          
     }  
     .tailleFont{          
-        font-size: calc(6*(0.5vh+0.5vw)); 
-    }        
+        font-size: calc(3* (0.5vh + 0.5vw)); 
+    }   
  }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
     .title{
-        font-size: calc(9*(0.5vh+0.5vw));        
+        font-size: calc(3* (0.5vh + 0.5vw));        
     }
     .titlePicto{        
-        font-size: calc(5*(0.5vh+0.5vw));          
-    } 
+        font-size: calc(1.5* (0.5vh + 0.5vw));          
+    }  
     .tailleFont{          
-        font-size: calc(6*(0.5vh+0.5vw)); 
+        font-size: calc(3* (0.5vh + 0.5vw)); 
     }  
  }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     .title{
-        font-size: calc(10*(0.5vh+0.5vw));        
+        font-size: calc(4* (0.5vh + 0.5vw));        
     }
     .titlePicto{        
-        font-size: calc(5*(0.5vh+0.5vw));          
+        font-size: calc(1.5* (0.5vh + 0.5vw));          
     }  
     .tailleFont{          
-        font-size: calc(7*(0.5vh+0.5vw)); 
+        font-size: calc(3* (0.5vh + 0.5vw)); 
     }  
  }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
     .title{
-        font-size: calc(12*(0.5vh+0.5vw));        
+        font-size: calc(4* (0.5vh + 0.5vw));        
     }
     .titlePicto{        
-        font-size: calc(5*(0.5vh+0.5vw));          
+        font-size: calc(1.5* (0.5vh + 0.5vw));          
     }  
     .tailleFont{          
-        font-size: calc(8*(0.5vh+0.5vw)); 
+        font-size: calc(3* (0.5vh + 0.5vw)); 
     }  
  }
