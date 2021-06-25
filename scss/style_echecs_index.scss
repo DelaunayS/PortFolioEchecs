@@ -41,23 +41,17 @@ ul{
 
 .container_board{    
     border: solid black 1px; 
-    margin:auto; 
-    width:80vh;
-    height: 80vh;     
+    margin:auto;        
 } 
 
-.row_board{    
-    width: 80vh;
-    height: 10vh;   
+.row_board{         
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
     
 .square{   
     display: flex;
     flex-direction: column;
-    justify-content: center;      
-    min-width:10vh;
-    min-height:10vh;        
+    justify-content: center;  
     font-weight: bold;          
     &:hover{        
         background-color:$color3;} 
@@ -74,7 +68,9 @@ ul{
     }
 
 .titlePicto{
-    margin:2px;     
+    margin:1px;
+    padding-top: 1px;
+    padding-bottom: 1px;     
     text-align: center;
 }   
 
@@ -161,8 +157,6 @@ ul{
     height: 10px;
     background-color: #CF5C78 ;
 }
-
-
 
 /* corps des cartes dans le carrousel*/
 .card-body{
@@ -256,10 +250,10 @@ ul{
         font-size: calc(3* (0.5vh + 0.5vw));        
     }
     .titlePicto{        
-        font-size: calc(1* (0.5vh + 0.5vw));          
+        font-size: calc(2* (0.5vh + 0.5vw));          
     }  
     .tailleFont{          
-        font-size: calc(2* (0.5vh + 0.5vw)); 
+        font-size: calc(2.5 * (0.5vh + 0.5vw)); 
     }  
     .container_board{           
         width: 88vw;
@@ -284,7 +278,18 @@ ul{
     }  
     .tailleFont{          
         font-size: calc(3* (0.5vh + 0.5vw)); 
-    }   
+    } 
+    .container_board{           
+        width: 80vw;
+        height: 80vw;     
+    } 
+    .row_board{    
+        width: 80vw;
+        height: 10vw;}
+    .square{                
+        min-width:10vw;
+        min-height:10vw;  
+    }  
  }
 
 // Medium devices (tablets, 768px and up)
@@ -297,6 +302,17 @@ ul{
     }  
     .tailleFont{          
         font-size: calc(3* (0.5vh + 0.5vw)); 
+    }  
+    .container_board{           
+        width: 64vh;
+        height: 64vh;     
+    } 
+    .row_board{    
+        width: 64vh;
+        height: 8vh;}
+    .square{                
+        min-width:8vh;
+        min-height:8vh;  
     }  
  }
 
@@ -311,6 +327,17 @@ ul{
     .tailleFont{          
         font-size: calc(3* (0.5vh + 0.5vw)); 
     }  
+    .container_board{           
+        width: 72vh;
+        height: 72vh;     
+    } 
+    .row_board{    
+        width: 72vh;
+        height: 9vh;}
+    .square{                
+        min-width:9vh;
+        min-height:9vh;  
+    }  
  }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -323,5 +350,16 @@ ul{
     }  
     .tailleFont{          
         font-size: calc(3* (0.5vh + 0.5vw)); 
+    }  
+    .container_board{           
+        width: 80vh;
+        height: 80vh;     
+    } 
+    .row_board{    
+        width: 80vh;
+        height: 10vh;}
+    .square{                
+        min-width:10vh;
+        min-height:10vh;  
     }  
  }
